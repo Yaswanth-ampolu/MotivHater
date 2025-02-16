@@ -8,6 +8,10 @@ import { Button } from "@/components/ui/button";
 
 const faqs = [
   {
+    question: "What is MotivHater?",
+    answer: "MotivHater is a unique productivity app that uses reverse psychology and humor to motivate you by playfully roasting your procrastination habits."
+  },
+  {
     question: "Can I customize the intensity of the roasts?",
     answer: "Yes! You can adjust the sass level from 'gentle nudge' to 'brutal honesty' in your settings. We want to motivate you, not traumatize you!"
   },
