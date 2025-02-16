@@ -42,7 +42,7 @@ const roastModes = {
   },
   b99: {
     title: "Brooklyn 99",
-    icon: "https://media.giphy.com/media/l4HnN3TbBNYZbeEdq/giphy.gif",
+    icon: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzVhcjI1enQ5dGRyMm03ZnNoMHMzaWVwM215emJiOW5idW9oNGxmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o8doT5DaMjfH3paHC/giphy.gif",
     description: "Cool cool cool cool cool... not your productivity though",
     roasts: {
       10: "Your productivity is lower than Hitchcock and Scully combined",
@@ -59,7 +59,7 @@ const roastModes = {
   },
   friends: {
     title: "F.R.I.E.N.D.S",
-    icon: "https://media.giphy.com/media/LMuU3xRkGus3SYqaqD/giphy.gif",
+    icon: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczcyZ3A3czVzYjRsOTd1eXJqNnBiYXE1YXptcDJodnM5Mm5xa3cyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/njSItrBaoW9fa/giphy.gif",
     description: "Could your productivity BE any lower?",
     roasts: {
       10: "Your work ethic is like Ross's marriages - brief and unsuccessful",
@@ -76,7 +76,7 @@ const roastModes = {
   },
   brainrot: {
     title: "BrainRot™ Mode",
-    icon: "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
+    icon: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWRraG5kdW5kdmJpOHhudmVwMnR2dm50N3RxZjd0eHJvNXNlbHA4YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ml1fIFlQgC9gHejiwL/giphy.gif",
     description: "For chronically online individuals",
     roasts: {
       10: "Bro really said 'productivity arc' while watching Skibidi Toilet compilations 💀",
@@ -93,7 +93,7 @@ const roastModes = {
   },
   doomscroller: {
     title: "Doom Scroller Elite",
-    icon: "https://media.giphy.com/media/3o7TKEon7mFwdygLYY/giphy.gif",
+    icon: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExanBsZ3M2ZmlqMDM3Y20zc2VmbGt2NHEzdWxhemNhZGJzMmhhc2g2eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d8Q9w4dgnnrB3VmOl9/giphy.gif",
     description: "Touch grass? Never heard of it",
     roasts: {
       10: "Another day of horizontal phone time?",
@@ -110,7 +110,7 @@ const roastModes = {
   },
   rickmorty: {
     title: "Rick & Morty",
-    icon: "https://media.giphy.com/media/3oEjHB1EXfScQvvgnm/giphy.gif",
+    icon: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3EzOWNtajVjMHJ0b2Y0Y3J2aGIwc3lnanA4aGJ3bmVvZTBrem9qaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l41JU9pUyosHzWyuQ/giphy.gif",
     description: "Wubba Lubba Procrastination",
     roasts: {
       10: "Your productivity is lower than Jerry's self-esteem",
@@ -127,7 +127,7 @@ const roastModes = {
   },
   gym: {
     title: "Gym Bro",
-    icon: "https://media.giphy.com/media/LQp2DrNPPUPybUwVx9/giphy.gif",
+    icon: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExazZ4dmlxdmp0cXkzMTdmbjB1bW9uMGowZ3U2NHQzcTI0OXY0dWg4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fdNE70u9SqFAPXWKPe/giphy.gif",
     description: "Do you even lift (your productivity)?",
     roasts: {
       10: "Bro, your excuses are getting more reps than your tasks",
