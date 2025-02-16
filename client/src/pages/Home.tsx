@@ -13,7 +13,7 @@ export default function Home() {
       <section className="min-h-[90vh] flex items-center bg-gradient-to-b from-background to-primary/5">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-outward leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-nighty leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
               Stay Productive.<br />
               Get Roasted.<br />
               Embrace the Hate.

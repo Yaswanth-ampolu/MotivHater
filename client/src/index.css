@@ -22,7 +22,7 @@
   }
 
   h1, h2, h3 {
-    @apply font-outward;
+    @apply font-nighty;
   }
 
   .accent-text {
