@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="font-nighty text-2xl text-primary">
-            MotivHater
+            LazyNoMore
           </Link>
 
           {/* Desktop Navigation */}

@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="/" className="font-nighty text-2xl text-primary">
-              MotivHater
+              LazyNoMore
             </Link>
             <p className="text-sm text-muted-foreground">
               Get roasted into productivity by an AI that watched too many sitcoms.
@@ -86,7 +86,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t">
           <p className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} MotivHater. All rights reserved.
+            © {new Date().getFullYear()} LazyNoMore. All rights reserved.
           </p>
         </div>
       </div>
