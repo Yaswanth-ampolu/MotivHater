@@ -53,19 +53,31 @@
   }
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background border border-border rounded-lg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/40 rounded-lg border border-border transition-all duration-200 hover:bg-primary/60;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Achievement Section Scrollbar */
 .h-[400px]::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
+  margin-right: 2px;
 }
 
 .h-[400px]::-webkit-scrollbar-track {
-  @apply bg-slate-100 rounded-full;
+  @apply bg-slate-100/50 rounded-full border-0;
 }
 
 .h-[400px]::-webkit-scrollbar-thumb {
-  @apply bg-primary/30 rounded-full transition-colors hover:bg-primary/50;
-}
-
-.h-[400px]::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary/50;
+  @apply bg-primary/30 rounded-full border-0 hover:bg-primary/50;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
 }
