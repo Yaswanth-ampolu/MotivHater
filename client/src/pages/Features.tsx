@@ -25,7 +25,7 @@ const roastModes = {
   },
   himym: {
     title: "Barney's Playbook",
-    icon: "https://media.giphy.com/media/MbAd0DqqFU6XYKtORp/giphy.gif",
+    icon: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExemFhbDFhYzdtNmdqdzdlb2ZmdGt1OGRldXhjaWQ0enYzams2bWszdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jSxK33dwEMbkY/giphy.gif",
     description: "Wait for it... you're not being LEGENDARY",
     roasts: {
       10: "Have you met productivity? Because you haven't.",
@@ -172,7 +172,7 @@ export default function Features() {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
             Randomize your reality check from your favorite shows
           </p>
-          <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
+          <div className="relative mt-8">
             <Button 
               onClick={handleRandomMode}
               className="group flex items-center gap-2 bg-primary/20 hover:bg-primary/30 text-primary px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
