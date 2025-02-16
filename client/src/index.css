@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/pilowlava');
+@import url('https://fonts.cdnfonts.com/css/outward');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-pilowlava: 'Pilowlava', system-ui;
+    --font-outward: 'Outward', system-ui;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  h1, h2, h3 {
+    @apply font-pilowlava;
+  }
+
+  .accent-text {
+    @apply font-outward;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .nav-link {
+    @apply text-foreground/90 hover:text-foreground transition-colors;
+  }
+
+  .mascot-container {
+    @apply relative w-40 h-40 sm:w-60 sm:h-60;
+  }
+
+  .cta-button {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-lg 
+           font-semibold transition-all duration-300 hover:scale-105;
+  }
+
+  .feature-card {
+    @apply p-6 rounded-xl bg-card shadow-lg hover:shadow-xl transition-shadow;
+  }
+}

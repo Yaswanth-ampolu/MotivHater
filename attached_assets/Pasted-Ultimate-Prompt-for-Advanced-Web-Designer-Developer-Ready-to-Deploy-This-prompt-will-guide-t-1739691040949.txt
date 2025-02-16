@@ -1,0 +1,91 @@
+Ultimate Prompt for Advanced Web Designer & Developer (Ready to Deploy) 🚀
+This prompt will guide the advanced web designer and developer to create a fully responsive, interactive, and engaging landing page that integrates AI elements like personalized roasts and motivation while also delivering a memorable user experience.
+
+Task Overview:
+We are building a cutting-edge, highly interactive landing page for a productivity app that combines AI-powered motivation and gamification (like Duolingo) with a fun, engaging experience for users. The website should be fully responsive, visually stunning, and optimized for fast performance. It should be ready for deployment with SEO optimizations, mobile-first design, and smooth animations.
+
+Tech Stack to Use:
+Frontend:
+Next.js or SvelteKit (for server-side rendering and fast loading)
+Tailwind CSS (for flexible and modern styling)
+GSAP or Framer Motion (for advanced animations and smooth scrolling effects)
+Lottie (for interactive mascot animation)
+Backend (Optional):
+Vercel or Netlify (for deploying static assets with automatic optimizations)
+AI Integration (Optional for Future):
+OpenAI API or Ollama for local models (for generating AI responses such as roasts and motivation)
+1️⃣ Page: Home
+Navbar
+Simple, fixed navbar with logo on the left and navigation links: Home | Features | How It Works | Testimonials | About | FAQ | Contact Us on the right.
+Responsive: Navbar collapses into a hamburger menu on mobile devices.
+Hero Section
+Tagline: “Stay Productive. Get Roasted. Win the Game.”
+Subheading: "AI-driven motivation that pushes you to succeed, with a little extra burn to keep you on track."
+CTA Button: “Join the Movement” – Animated with hover effect (e.g., change color, scale).
+Interactive Animated Mascot:
+Mascot reacts to cursor movement (change expression or pose).
+Clicking on the mascot triggers Brainrot AI-style prompts like:
+“Another day of no progress? What’s your excuse?”
+Animation Style: Use Lottie or GSAP for smooth animations.
+Feature List Section
+AI-Powered Motivation & Roasts
+Gamification: Streaks, Badges, Leaderboards
+Productivity Tracking & Smart Reminders
+Each feature with an animated icon and hover effect (using GSAP or Tailwind).
+Responsive Grid Layout: Features displayed in a 2-column layout for desktop, 1-column for mobile.
+Scrolling Animations
+Each section fades or slides in smoothly as the user scrolls down.
+On-scroll animation triggers using Framer Motion (or GSAP) to create an engaging experience.
+Footer
+Links: Privacy Policy | Terms of Service | Social Media | Contact Us
+Icons: Social media links with hover effects (animated color change).
+2️⃣ Page: Features
+Navbar
+Same as Home page.
+Feature Overview Section
+High-level summary of features:
+AI-Powered Roasts & Motivation
+Gamification Elements: Streaks, badges, rewards
+Social & Competitive Tracking
+Real-Time Feedback & Productivity Tracking
+Detailed Feature Sections
+AI-Powered Roasts & Motivation
+Interactive feature: Clicking on a button shows an example of a roast/motivation in action (change text with animation).
+Gamification
+Streaks, Badges, Leaderboards – Sections include hover animations and clickable demo features (e.g., show badge when clicked).
+Social & Competitive Tracking
+Leaderboard mock-up with animations of users competing in real-time.
+Interactive Demo Elements
+A slider to change the roast intensity (e.g., mild -> savage roast). When the slider is moved, AI-generated roasts change based on the selected intensity.
+Footer
+Same as Home page.
+3️⃣ Page: How It Works
+Navbar
+Same as Home page.
+How It Works Section
+Step 1: Set Your Tasks – Simple description of task logging.
+Step 2: Get AI Feedback (Roasts/Motivation) – Include a clickable example to show how feedback works.
+Step 3: Earn Rewards & Maintain Streaks – Visuals showing badges and progress.
+Interactive Section
+Task Modes: Clickable options to choose different goal categories (e.g., Fitness, Study, Tech). Each option shows how the AI adapts its feedback based on the goal category.
+Footer
+Same as Home page.
+4️⃣ Page: Testimonials & Social Proof
+Navbar
+Same as Home page.
+Testimonial Section
+User Quotes: Engaging and relatable testimonials with quote bubble animation on hover.
+Gallery Section: Before & after user experience images or gifs showcasing progress.
+Social Media Mentions
+Embedded Twitter, Reddit, or Instagram feedback posts with hover effects (e.g., expand on hover).
+CTA Section
+Text: “See the difference for yourself! Join the Movement.”
+CTA Button: “Sign Up Now!” – CTA button should have a subtle hover effect (color change, scale).
+Footer
+Same as Home page.
+5️⃣ Page: About the Developer
+Navbar
+Same as Home page.
+About Section
+Personal Backstory: “Why I built this app—because I believe in the power of humor and motivation combined.”
+Include a fun interactive Easter egg: Clicking an icon or part of the page triggers an AI-generated roast or motivational message , something from the rick and morty  (e.g., “Well, you found that...
