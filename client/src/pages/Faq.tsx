@@ -71,7 +71,9 @@ export default function Faq() {
           <p className="text-muted-foreground mb-8">
             We're here to help! Reach out to our support team anytime.
           </p>
-          <Button className="cta-button">Contact Us</Button>
+          <ContactForm>
+            <Button className="cta-button">Contact Us</Button>
+          </ContactForm>
         </div>
       </div>
     </div>

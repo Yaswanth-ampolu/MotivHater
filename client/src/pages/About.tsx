@@ -1,5 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import emailjs from '@emailjs/browser';
+
+function ContactForm({ children }) {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+          alert('Message sent successfully!');
+      }, (error) => {
+          console.log(error.text);
+          alert('Failed to send message. Please try again later.');
+      });
+    e.target.reset();
+  };
+
+  return (
+    <form onSubmit={sendEmail}>
+      {children}
+    </form>
+  );
+}
+
 
 export default function About() {
   const handleEasterEgg = () => {
@@ -108,7 +132,9 @@ export default function About() {
           <h2 className="text-3xl font-pilowlava mb-6">
             Want to Join Our Journey?
           </h2>
-          <Button className="cta-button">Get Started Now</Button>
+          <ContactForm>
+            <Button className="cta-button">Contact Us</Button>
+          </ContactForm>
         </div>
       </div>
     </div>
