@@ -118,18 +118,62 @@ export default function Home() {
             <div className="relative bg-slate-100 rounded-lg p-8">
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold mb-4">Recent Achievements</h3>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
-                  <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">🔥</div>
-                  <div>
-                    <div className="font-semibold">Productivity Streak</div>
-                    <div className="text-sm text-muted-foreground">7 days of consistent task completion</div>
+                <div className="h-[400px] overflow-y-auto space-y-4 pr-4">
+                  <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
+                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">🔥</div>
+                    <div>
+                      <div className="font-semibold">Couch Escape Artist</div>
+                      <div className="text-sm text-muted-foreground">Finally got up after 3 hours of "just 5 more minutes"</div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
-                  <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">⭐</div>
-                  <div>
-                    <div className="font-semibold">Task Master</div>
-                    <div className="text-sm text-muted-foreground">Completed 50 tasks this month</div>
+                  <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
+                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">🧠</div>
+                    <div>
+                      <div className="font-semibold">Brain.exe Started</div>
+                      <div className="text-sm text-muted-foreground">Used your brain before coffee - achievement unlocked!</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
+                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">📱</div>
+                    <div>
+                      <div className="font-semibold">Social Media Survivor</div>
+                      <div className="text-sm text-muted-foreground">Went 2 hours without checking Instagram. Are you okay?</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
+                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">🎯</div>
+                    <div>
+                      <div className="font-semibold">Procrastination Pro</div>
+                      <div className="text-sm text-muted-foreground">Completed a task that's been on your list for 3 months</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
+                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">⚡</div>
+                    <div>
+                      <div className="font-semibold">Speed Demon</div>
+                      <div className="text-sm text-muted-foreground">Finished work in normal time instead of last minute</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
+                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">🦾</div>
+                    <div>
+                      <div className="font-semibold">Deadline Warrior</div>
+                      <div className="text-sm text-muted-foreground">Submitted something early - who are you?</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
+                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">🎮</div>
+                    <div>
+                      <div className="font-semibold">Gaming Resistance</div>
+                      <div className="text-sm text-muted-foreground">"Just one more game" was actually just one game</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
+                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-xl">📚</div>
+                    <div>
+                      <div className="font-semibold">Reading Rainbow</div>
+                      <div className="text-sm text-muted-foreground">Read documentation instead of random copying from Stack Overflow</div>
+                    </div>
                   </div>
                 </div>
               </div>
