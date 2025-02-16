@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "wouter";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,7 +20,9 @@ export default function Home() {
             <p className="text-xl text-muted-foreground">
               AI-driven motivation that pushes you to succeed, with a little extra burn to keep you on track.
             </p>
-            <Button className="cta-button text-lg">Start Your Villain Arc</Button>
+            <Link href="/download">
+              <Button className="cta-button text-lg">Start Your Villain Arc</Button>
+            </Link>
           </div>
         </div>
       </section>

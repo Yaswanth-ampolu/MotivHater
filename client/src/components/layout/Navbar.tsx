@@ -9,7 +9,6 @@ const navigation = [
   { name: "Testimonials", href: "/testimonials" },
   { name: "About", href: "/about" },
   { name: "FAQ", href: "/faq" },
-  { name: "Download", href: "/download" },
 ];
 
 export default function Navbar() {
@@ -37,7 +36,9 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <Button className="cta-button">Stop Being Lazy</Button>
+            <Link href="/download">
+              <Button className="cta-button">Stop Being Lazy</Button>
+            </Link>
           </div>
 
           {/* Mobile Navigation Button */}
@@ -71,7 +72,9 @@ export default function Navbar() {
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full mt-4 cta-button">Stop Being Lazy</Button>
+              <Link href="/download">
+                <Button className="w-full mt-4 cta-button">Stop Being Lazy</Button>
+              </Link>
             </div>
           </div>
         )}
