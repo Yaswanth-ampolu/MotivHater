@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "wouter";
+import { motion } from 'framer-motion';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,9 +21,30 @@ export default function Home() {
             <p className="text-xl text-muted-foreground">
               The AI productivity app that doesn't care about your feelings - only your success.
             </p>
-            <Link href="/download">
-              <Button className="cta-button text-lg">Start Your Villain Arc</Button>
-            </Link>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ 
+                duration: 0.5, 
+                delay: 1.4,
+                type: "spring",
+                stiffness: 200
+              }}
+            >
+              <Link href="/download">
+                <Button 
+                  className="cta-button"
+                  asChild
+                >
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Start Your Villain Arc
+                  </motion.div>
+                </Button>
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
