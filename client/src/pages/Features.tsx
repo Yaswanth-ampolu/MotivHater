@@ -1,107 +1,134 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Slider } from "@/components/ui/slider";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
 import { useState } from "react";
 
-const roastIntensityExamples = {
-  mild: "Bro really thinks he's in his productivity arc while doom scrolling 💀",
-  medium: "Your productivity is giving major NPC energy. Even skibidi toilets are more active than you!",
-  savage: "My guy's been stuck in a TikTok backroom longer than your last productive day. Even Rick would call you a Jerry for this level of procrastination!"
+// Different modes of roasts
+const roastModes = {
+  "brainrot": {
+    title: "Brainrot Mode",
+    description: "For when you're too deep in TikTok's trenches",
+    roasts: [
+      "Bro thinks he's in his productivity arc while watching Skibidi Toilet compilations 💀",
+      "My guy's been stuck in a TikTok backroom longer than his attention span",
+      "POV: You're procrastinating but in 'aesthetic' way ✨"
+    ]
+  },
+  "sitcom": {
+    title: "Sitcom Mode",
+    description: "Getting roasted by your favorite shows",
+    roasts: [
+      "Your productivity is lower than Jerry's self-esteem",
+      "Even Morty's math grades are better than your focus stats",
+      "You've got more excuses than Rick has interdimensional cable channels"
+    ]
+  },
+  "meme": {
+    title: "Meme Lord Mode",
+    description: "When regular motivation isn't dank enough",
+    roasts: [
+      "Your task list: 'I'm in danger' *chuckles*",
+      "Your productivity graph 📉 'This is fine' 🔥",
+      "Nobody: \nAbsolutely nobody: \nYou: 'Let me check social media one more time'"
+    ]
+  }
 };
 
 export default function Features() {
-  const [intensity, setIntensity] = useState(50);
-
-  const getIntensityLevel = () => {
-    if (intensity < 33) return "mild";
-    if (intensity < 66) return "medium";
-    return "savage";
-  };
+  const [currentMode, setCurrentMode] = useState("brainrot");
 
   return (
     <div className="py-16">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-nighty mb-6">
-            No More Excuses, Just Results
+          <h1 className="text-4xl md:text-5xl font-nighty mb-6 animate-bounce">
+            Choose Your Reality Check
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Get absolutely roasted by AI that's more savage than your group chat.
+            Get roasted in your preferred flavor of internet culture
           </p>
         </div>
 
-        {/* Main Features */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <Card className="p-6">
-            <h2 className="text-2xl font-nighty mb-4">AI-Powered Reality Checks</h2>
-            <p className="text-muted-foreground mb-6">
-              Our AI has watched every sitcom and knows every meme. It's here to call you out like your most brutally honest friend.
-            </p>
-            <div className="space-y-4">
-              <div>
-                <p className="text-sm text-muted-foreground mb-2">Adjust Reality Check Intensity</p>
-                <Slider
-                  value={[intensity]}
-                  onValueChange={(value) => setIntensity(value[0])}
-                  max={100}
-                  step={1}
-                  className="mb-4"
-                />
-                <div className="bg-slate-100 p-4 rounded-lg">
-                  <p className="italic text-lg">{roastIntensityExamples[getIntensityLevel() as keyof typeof roastIntensityExamples]}</p>
-                </div>
-              </div>
-            </div>
-          </Card>
+        {/* Interactive Mode Selector */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <Tabs value={currentMode} onValueChange={setCurrentMode}>
+            <TabsList className="grid w-full grid-cols-3">
+              {Object.entries(roastModes).map(([key, mode]) => (
+                <TabsTrigger
+                  key={key}
+                  value={key}
+                  className="text-lg py-6 relative overflow-hidden group"
+                >
+                  <span className="relative z-10">{mode.title}</span>
+                  <div className="absolute inset-0 bg-primary/10 transform translate-y-full transition-transform group-hover:translate-y-0" />
+                </TabsTrigger>
+              ))}
+            </TabsList>
 
-          <Card className="p-6">
-            <h2 className="text-2xl font-nighty mb-4">Procrastination Prevention</h2>
-            <p className="text-muted-foreground mb-6">
-              Turn your productivity from "Rick's Garage Sale" into "Pickle Rick" level efficiency.
-            </p>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="text-center p-4 bg-primary/10 rounded-lg">
-                <div className="font-bold text-xl">🧪</div>
-                <p className="text-sm">Anti-Morty</p>
-              </div>
-              <div className="text-center p-4 bg-primary/10 rounded-lg">
-                <div className="font-bold text-xl">⚡</div>
-                <p className="text-sm">Focus Mode</p>
-              </div>
-              <div className="text-center p-4 bg-primary/10 rounded-lg">
-                <div className="font-bold text-xl">🌀</div>
-                <p className="text-sm">Portal Time</p>
-              </div>
-            </div>
-          </Card>
+            {Object.entries(roastModes).map(([key, mode]) => (
+              <TabsContent key={key} value={key} className="mt-8">
+                <Card className="p-8">
+                  <h3 className="text-2xl font-nighty mb-4">{mode.title}</h3>
+                  <p className="text-muted-foreground mb-6">{mode.description}</p>
+                  <div className="space-y-4">
+                    {mode.roasts.map((roast, index) => (
+                      <div
+                        key={index}
+                        className="bg-slate-100 p-4 rounded-lg transform hover:scale-105 transition-transform"
+                      >
+                        <p className="text-lg">{roast}</p>
+                      </div>
+                    ))}
+                  </div>
+                </Card>
+              </TabsContent>
+            ))}
+          </Tabs>
         </div>
 
-        {/* Additional Features */}
-        <div className="grid md:grid-cols-3 gap-8">
-          <Card className="p-6">
-            <h3 className="text-xl font-semibold mb-4">Real-Time Reality Checks</h3>
-            <p className="text-muted-foreground">
-              Get called out faster than you can say "wubba lubba dub dub"
-            </p>
-          </Card>
-          <Card className="p-6">
-            <h3 className="text-xl font-semibold mb-4">Progress Tracking</h3>
-            <p className="text-muted-foreground">
-              Watch your productivity go from Jerry to Rick levels
-            </p>
-          </Card>
-          <Card className="p-6">
-            <h3 className="text-xl font-semibold mb-4">Social Features</h3>
-            <p className="text-muted-foreground">
-              Get roasted with friends - misery loves company!
-            </p>
-          </Card>
+        {/* Productivity Levels */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-nighty text-center mb-8">
+            Level Up Your Productivity Game
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="p-6 transform hover:rotate-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-4">Jerry Level</h3>
+              <p className="text-muted-foreground">
+                Still using Internet Explorer to check your tasks? Let's fix that.
+              </p>
+            </Card>
+
+            <Card className="p-6 transform hover:-rotate-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-4">Morty Level</h3>
+              <p className="text-muted-foreground">
+                You're trying, but you're still getting carried by the AI.
+              </p>
+            </Card>
+
+            <Card className="p-6 transform hover:rotate-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-4">Rick Level</h3>
+              <p className="text-muted-foreground">
+                Peak efficiency. Even the AI is impressed.
+              </p>
+            </Card>
+          </div>
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16">
-          <Button className="cta-button">Start Your Character Development Arc</Button>
+        <div className="text-center">
+          <Button className="cta-button text-lg group">
+            Start Your Character Development Arc
+            <span className="inline-block ml-2 group-hover:rotate-12 transition-transform">
+              🌀
+            </span>
+          </Button>
         </div>
       </div>
     </div>
