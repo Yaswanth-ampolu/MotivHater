@@ -63,16 +63,7 @@ export default function Faq() {
           </Accordion>
         </div>
 
-        {/* Contact CTA */}
-        <div className="text-center">
-          <h2 className="text-2xl font-pilowlava mb-4">
-            Still have questions?
-          </h2>
-          <p className="text-muted-foreground mb-8">
-            We're here to help! Reach out to our support team anytime.
-          </p>
-          <Button className="cta-button">Contact Us</Button>
-        </div>
+        
       </div>
     </div>
   );
