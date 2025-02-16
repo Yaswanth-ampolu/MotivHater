@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        pilowlava: ['var(--font-pilowlava)'],
+        nighty: ['var(--font-nighty)'],
         outward: ['var(--font-outward)'],
         sans: ['Inter var', 'sans-serif'],
       },
@@ -69,20 +69,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {

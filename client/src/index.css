@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/pilowlava');
+@import url('https://fonts.cdnfonts.com/css/nighty');
 @import url('https://fonts.cdnfonts.com/css/outward');
 
 @tailwind base;
@@ -8,7 +8,7 @@
 
 @layer base {
   :root {
-    --font-pilowlava: 'Pilowlava', system-ui;
+    --font-nighty: 'Nighty', system-ui;
     --font-outward: 'Outward', system-ui;
   }
 
@@ -21,7 +21,7 @@
   }
 
   h1, h2, h3 {
-    @apply font-pilowlava;
+    @apply font-nighty;
   }
 
   .accent-text {

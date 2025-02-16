@@ -19,8 +19,8 @@ export default function Navbar() {
     <nav className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 border-b">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="font-pilowlava text-2xl text-primary">
-            ProductiveAI
+          <Link href="/" className="font-nighty text-2xl text-primary">
+            LazyNoMore
           </Link>
 
           {/* Desktop Navigation */}
@@ -36,7 +36,7 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <Button className="cta-button">Join Now</Button>
+            <Button className="cta-button">Stop Being Lazy</Button>
           </div>
 
           {/* Mobile Navigation Button */}
@@ -70,7 +70,7 @@ export default function Navbar() {
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full mt-4 cta-button">Join Now</Button>
+              <Button className="w-full mt-4 cta-button">Stop Being Lazy</Button>
             </div>
           </div>
         )}
