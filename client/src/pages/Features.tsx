@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { ProcrastinatorPete, FocusedFiona, DistractedDave } from "@/components/Characters";
+import { MemeLord, HypeGoblin, StreamTroll, CloutFiend, DankWizard, VibeBot } from "@/components/Characters";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { Shuffle } from "lucide-react";
@@ -220,10 +220,13 @@ export default function Features() {
         {/* Character Showcase */}
 <div className="max-w-4xl mx-auto mt-16">
   <h2 className="text-2xl font-semibold text-center mb-8">Meet Your Productivity Frenemies</h2>
-  <div className="flex justify-center gap-8">
-    <ProcrastinatorPete />
-    <FocusedFiona />
-    <DistractedDave />
+  <div className="flex flex-wrap justify-center gap-8">
+    <MemeLord />
+    <HypeGoblin />
+    <StreamTroll />
+    <CloutFiend />
+    <DankWizard />
+    <VibeBot />
   </div>
   <p className="text-center text-muted-foreground mt-4">
     These characters will guide (and roast) you on your productivity journey
