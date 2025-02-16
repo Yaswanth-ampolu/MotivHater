@@ -2,12 +2,6 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { Shuffle } from "lucide-react";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs";
 import { useState } from "react";
 
 const roastModes = {
@@ -45,6 +39,40 @@ const roastModes = {
       100: "True story: you're the biggest disappointment since the GoT finale"
     }
   },
+  b99: {
+    title: "Brooklyn 99",
+    icon: "🚔",
+    description: "Cool cool cool cool cool... not your productivity though",
+    roasts: {
+      10: "Your productivity is lower than Hitchcock and Scully combined",
+      20: "Even Gina pays more attention to work than you (when she's not on her phone)",
+      30: "Title of your productivity tape: The Disappointment",
+      40: "Your work ethic makes Charles question his loyalty",
+      50: "Not even Terry's yogurt can fuel your productivity",
+      60: "Jake's solving cases faster than you're completing tasks",
+      70: "Amy would need a whole new binder system for your excuses",
+      80: "Your performance review is looking worse than the Jimmy Jab Games",
+      90: "Captain Holt would find your efficiency... disappointing",
+      100: "PAIN. That's what your productivity brings to the workplace."
+    }
+  },
+  friends: {
+    title: "F.R.I.E.N.D.S",
+    icon: "☕",
+    description: "Could your productivity BE any lower?",
+    roasts: {
+      10: "Your work ethic is like Ross's marriages - brief and unsuccessful",
+      20: "Even Joey's acting career is more productive than you",
+      30: "You're taking more breaks than Central Perk's couch",
+      40: "Not even Phoebe's songs are as chaotic as your workflow",
+      50: "Monica would have a breakdown seeing your organization skills",
+      60: "Your excuses are longer than Ross's 'We were on a break!' saga",
+      70: "Chandler's job was less confusing than your productivity strategy",
+      80: "Rachel was better at serving coffee than you are at your tasks",
+      90: "Your work schedule is messier than Joey's eating habits",
+      100: "PIVOT! Because your current strategy clearly isn't working"
+    }
+  },
   brainrot: {
     title: "BrainRot™ Mode",
     icon: "🧠",
@@ -79,27 +107,44 @@ const roastModes = {
       100: "You've scrolled so far, you've found your old MySpace account"
     }
   },
-  memelord: {
-    title: "Meme Lord Supreme",
-    icon: "🎭",
-    description: "When regular motivation isn't dank enough",
+  rickmorty: {
+    title: "Rick & Morty",
+    icon: "🧪",
+    description: "Wubba Lubba Procrastination",
     roasts: {
-      10: "POV: You're looking at memes instead of working",
-      20: "Nobody:\nAbsolutely nobody:\nYou: Let me check Reddit one more time",
-      30: "Your task list be like 'I'm in danger' *chuckles*",
-      40: "*Meanwhile, your deadlines* Am I a joke to you?",
-      50: "Your productivity: Gone, reduced to atoms",
-      60: "Task failed successfully: Professional procrastinator",
-      70: "You're not just a clown, you're the entire circus",
-      80: "Top 10 Anime Betrayals: You vs Your Responsibilities",
-      90: "This isn't even my final form of procrastination",
-      100: "*Boss music intensifies* Deadline approaches"
+      10: "Your productivity is lower than Jerry's self-esteem",
+      20: "Even Morty's math grades are better than your focus stats",
+      30: "You've got more excuses than Rick has portal fluid",
+      40: "Your work ethic makes Jerry look like a genius",
+      50: "Not even interdimensional cable can distract from your laziness",
+      60: "Your productivity is like a Meeseeks - painful to watch",
+      70: "Even the Council of Ricks wouldn't approve your methods",
+      80: "Your efficiency is lower than Morty's chances of graduation",
+      90: "Not even Rick's portal gun can find a dimension where you're productive",
+      100: "Your work ethic is making the Galactic Federation look organized"
+    }
+  },
+  gym: {
+    title: "Gym Bro",
+    icon: "💪",
+    description: "Do you even lift (your productivity)?",
+    roasts: {
+      10: "Bro, your excuses are getting more reps than your tasks",
+      20: "You're skipping more tasks than leg days",
+      30: "Your productivity is weaker than your first gym selfie",
+      40: "Taking longer breaks than between super sets",
+      50: "Your task list needs more protein",
+      60: "Stop scrolling gym TikToks and start your productivity sets",
+      70: "Your focus is shakier than post-leg day",
+      80: "Failing more tasks than PR attempts",
+      90: "Your productivity routine needs a personal trainer",
+      100: "Even your pre-workout can't save this performance"
     }
   }
 };
 
 export default function Features() {
-  const [currentMode, setCurrentMode] = useState("office");
+  const [currentMode, setCurrentMode] = useState(Object.keys(roastModes)[0]);
   const [intensity, setIntensity] = useState(10);
 
   const handleRandomMode = () => {
@@ -113,89 +158,84 @@ export default function Features() {
     return roastModes[mode as keyof typeof roastModes].roasts[roundedIntensity as keyof typeof roastModes[keyof typeof roastModes]["roasts"]];
   };
 
+  const currentModeData = roastModes[currentMode as keyof typeof roastModes];
+
   return (
     <div className="py-16 min-h-screen bg-gradient-to-b from-background to-primary/5">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-nighty mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70 animate-pulse">
-            Select Your Roast Mode
+            Get Roasted in Style
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Because sometimes you need a reality check from your favorite shows
+            Randomize your reality check from your favorite shows
           </p>
-        </div>
-
-        {/* Random Mode Button */}
-        <div className="flex justify-center mb-8">
           <Button 
             onClick={handleRandomMode}
-            className="group flex items-center gap-2 bg-primary/20 hover:bg-primary/30 text-primary"
+            className="mt-8 group flex items-center gap-2 bg-primary/20 hover:bg-primary/30 text-primary"
           >
             <Shuffle className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
-            Randomize Mode
+            Switch Roast Mode
           </Button>
         </div>
 
-        {/* Mode Selector */}
+        {/* Current Mode Display */}
         <div className="max-w-4xl mx-auto">
-          <Tabs value={currentMode} onValueChange={setCurrentMode}>
-            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 p-2 gap-2">
-              {Object.entries(roastModes).map(([key, mode]) => (
-                <TabsTrigger
-                  key={key}
-                  value={key}
-                  className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground relative overflow-hidden group py-6"
-                >
-                  <div className="flex flex-col items-center gap-2">
-                    <span className="text-2xl">{mode.icon}</span>
-                    <span className="font-semibold text-sm">{mode.title}</span>
-                  </div>
-                </TabsTrigger>
-              ))}
-            </TabsList>
+          <Card className="p-8 overflow-hidden relative group">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
-            {Object.entries(roastModes).map(([key, mode]) => (
-              <TabsContent key={key} value={key} className="mt-8">
-                <Card className="p-8 overflow-hidden relative group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <h3 className="text-3xl font-nighty mb-4 flex items-center gap-3">
-                    {mode.icon} {mode.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-8">{mode.description}</p>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="text-4xl">{currentModeData.icon}</span>
+              <div>
+                <h2 className="text-3xl font-nighty">{currentModeData.title}</h2>
+                <p className="text-muted-foreground">{currentModeData.description}</p>
+              </div>
+            </div>
 
-                  <div className="space-y-8">
-                    <div>
-                      <div className="flex justify-between mb-4">
-                        <span className="text-sm font-medium">Emotional Damage Level</span>
-                        <span className="text-sm text-primary font-medium">{intensity}%</span>
-                      </div>
-                      <Slider
-                        value={[intensity]}
-                        onValueChange={(value) => setIntensity(value[0])}
-                        max={100}
-                        step={10}
-                        className="mb-8"
-                      />
-                      <div className="bg-slate-100 p-6 rounded-lg transform transition-all hover:scale-105 hover:rotate-1">
-                        <p className="text-lg font-medium">
-                          {getCurrentRoast(key, intensity)}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </Card>
-              </TabsContent>
-            ))}
-          </Tabs>
+            <div className="space-y-8">
+              <div>
+                <div className="flex justify-between mb-4">
+                  <span className="text-sm font-medium">Emotional Damage Level</span>
+                  <span className="text-sm text-primary font-medium">{intensity}%</span>
+                </div>
+                <Slider
+                  value={[intensity]}
+                  onValueChange={(value) => setIntensity(value[0])}
+                  max={100}
+                  step={10}
+                  className="mb-8"
+                />
+                <div className="bg-slate-100 p-6 rounded-lg transform transition-all hover:scale-105 hover:rotate-1">
+                  <p className="text-lg font-medium">
+                    {getCurrentRoast(currentMode, intensity)}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
 
-        {/* CTA */}
-        <div className="text-center mt-16">
-          <Button className="cta-button text-lg group relative overflow-hidden">
-            <span className="relative z-10">Start Your Villain Arc</span>
-            <div className="absolute inset-0 bg-primary/20 transform translate-y-full transition-transform group-hover:translate-y-0" />
-          </Button>
+        {/* Gamification Stats */}
+        <div className="max-w-4xl mx-auto mt-16">
+          <div className="grid md:grid-cols-4 gap-4">
+            <Card className="p-4 text-center">
+              <h3 className="text-2xl font-bold text-primary">7</h3>
+              <p className="text-sm text-muted-foreground">Day Streak</p>
+            </Card>
+            <Card className="p-4 text-center">
+              <h3 className="text-2xl font-bold text-primary">23</h3>
+              <p className="text-sm text-muted-foreground">Tasks Completed</p>
+            </Card>
+            <Card className="p-4 text-center">
+              <h3 className="text-2xl font-bold text-primary">5</h3>
+              <p className="text-sm text-muted-foreground">Achievement Unlocked</p>
+            </Card>
+            <Card className="p-4 text-center">
+              <h3 className="text-2xl font-bold text-primary">#4</h3>
+              <p className="text-sm text-muted-foreground">Leaderboard Rank</p>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
