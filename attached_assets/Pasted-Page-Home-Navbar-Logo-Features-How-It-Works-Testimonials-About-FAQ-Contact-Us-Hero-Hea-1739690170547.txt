@@ -1,0 +1,148 @@
+Page: Home
+Navbar
+
+Logo | Features | How It Works | Testimonials | About | FAQ | Contact Us
+Hero Header Section
+
+Tagline: "Stay Productive. Get Roasted. Win the Game."
+Subheading: "AI-driven motivation that pushes you to succeed, with a little extra burn to keep you on track."
+CTA Button: “Join the Movement” (animated hover effect)
+Interactive Animated Mascot:
+Mascot reacts to cursor movement or scroll, changing its expression (excited, disappointed, or smug) based on the user's interaction.
+Brainrot AI-style roast/motivation when the user clicks on the mascot (e.g., “Another day of no progress? What’s your excuse?”)
+Features List Section
+
+Feature Highlights:
+AI-Powered Motivation & Roasts
+Gamification: Streaks, Badges, Leaderboards
+Productivity Tracking & Smart Reminders
+Interactive Elements: Small, animated icons or sliders showcasing how each feature works (hover or scroll to see more details).
+Feature Section (Scrolling Animations)
+
+Smooth Fade-in as the user scrolls, with engaging micro-interactions.
+Sections animate in one by one, drawing attention to each feature.
+Footer
+
+Links: Privacy Policy | Terms of Service | Social Media | Contact Us
+Sub-Pages
+Page: Features
+Navbar
+
+Logo | Home | How It Works | Testimonials | About | FAQ | Contact Us
+Header Section
+
+Overview of Features: A bold statement like "Powerful AI. Engaging Gamification. Your Productivity, Reimagined."
+Feature Section
+
+AI-Powered Roasts & Motivation
+Description of AI's ability to personalize motivational and roast responses based on user behavior.
+Use Brainrot AI-style prompt examples like:
+“Missed another task? What are you waiting for, a personal invitation to get things done?”
+Gamification Elements
+Streaks, Badges, Leaderboards, Rewards for achieving specific goals.
+CTA for users to “Unlock a New Badge” when they hit their first streak.
+Social & Competitive Tracking
+Compare your progress to friends or global users.
+Display of global leaderboards or “task champion of the day/week”.
+Real-Time Feedback & Productivity Tracking
+AI generates real-time reminders when tasks are skipped.
+Users can see progress bars and calendar tracking to visualize their productivity.
+Interactive Demo Elements
+A slider to adjust the roast/motivation intensity, showing examples of different AI responses.
+Footer
+
+Links to Terms, Social Media, and CTA
+Page: How It Works
+Navbar
+
+Logo | Home | Features | Testimonials | About | FAQ | Contact Us
+Header Section
+
+Step-by-Step Breakdown: “How Our AI Keeps You Productive”
+How It Works Sections
+
+Step 1: Set Your Tasks
+Users input daily goals via a simple task list interface.
+Step 2: Get AI Feedback
+AI roasts or motivates based on performance.
+Example prompt: “Another day of procrastination. What are you waiting for? Another motivational speech?”
+Step 3: Earn Rewards & Maintain Streaks
+Display of progress bars and streaks for the user.
+Interactive Section:
+Clickable task modes that show different ways the app can track goals (e.g., Fitness, Study, Work, etc.).
+User can toggle between different categories of goals to see unique responses from AI.
+Footer
+
+Links to Terms, Social Media, and Contact Us
+Page: Testimonials & Social Proof
+Navbar
+
+Logo | Home | Features | How It Works | About | FAQ | Contact Us
+Blog Post Header Section
+
+Title: "What Our Users Are Saying"
+Engaging header with some user quotes.
+Testimonial Section
+
+User Quotes: Testimonials from different demographics (students, professionals, fitness enthusiasts).
+Show relatable, humorous feedback like: "I never thought I’d appreciate getting roasted. This app makes me productive and hilarious."
+Gallery Section
+
+Before & After User Experience: Mock-up images or gifs showcasing how productivity improved with the app.
+Real-Time Social Media Mentions: Embedded Twitter, Reddit, or Instagram feedback.
+CTA Section
+
+Message: “See the difference for yourself! Join the Movement Today.”
+CTA Button: “Sign Up Now!”
+Footer
+
+Links to Terms, Social Media, and Contact Us
+Page: About the Developer
+Navbar
+
+Logo | Home | Features | Testimonials | How It Works | FAQ | Contact Us
+Header Section
+
+Developer’s Mission & Vision: Why you built the app and your personal connection to productivity and AI.
+About Section
+
+Personal Backstory: “I wanted to build something that not only helps people get things done, but also gives them a little nudge when they need it most.”
+Fun Interactive Easter Egg:
+
+Clicking on a hidden area (e.g., a mascot or a small icon) triggers an AI-generated roast like: “Wow, you found that. Now let’s see if you can find your productivity too.”
+Footer
+
+Links to Terms, Social Media, and Contact Us
+Page: CTA Section (Final Call)
+Navbar
+
+Logo | Home | Features | Testimonials | About | FAQ | Contact Us
+CTA Section
+
+Urgency Message: “Don’t let procrastination win! Join the movement now!”
+CTA Button: “Sign Up for Early Access”
+Subtle Countdown Animation: A dynamic visual that builds anticipation (not real countdown, just a fun visual).
+Footer
+
+Links to Terms, Social Media, and Contact Us
+Page: FAQ
+Navbar
+
+Logo | Home | Features | Testimonials | About | How It Works | Contact Us
+Header Section
+
+Title: "Frequently Asked Questions"
+Simple, clean layout for FAQs.
+FAQ Section
+
+Common questions with answers like:
+“Can I customize the intensity of the roasts?”
+“Does it work for different types of goals?”
+“How does AI track my progress?”
+CTA Section
+
+Encourage users to reach out if their question isn't answered.
+CTA Button: “Contact Us for More Info”
+Footer
+
+Links to Terms, Social Media, and Contact Us
