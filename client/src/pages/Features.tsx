@@ -8,7 +8,7 @@ import { useState } from "react";
 const roastModes = {
   office: {
     title: "The Office Mode",
-    icon: "🏢",
+    icon: "https://media.giphy.com/media/IjJ8FVe4HVk66yvlV2/giphy.gif",
     description: "Michael Scott would be proud (or concerned)",
     roasts: {
       10: "That's what she said... about your productivity",
@@ -25,7 +25,7 @@ const roastModes = {
   },
   himym: {
     title: "Barney's Playbook",
-    icon: "👔",
+    icon: "https://media.giphy.com/media/MbAd0DqqFU6XYKtORp/giphy.gif",
     description: "Wait for it... you're not being LEGENDARY",
     roasts: {
       10: "Have you met productivity? Because you haven't.",
@@ -165,20 +165,22 @@ export default function Features() {
     <div className="py-16 min-h-screen bg-gradient-to-b from-background to-primary/5">
       <div className="container-custom">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 relative">
           <h1 className="text-5xl md:text-6xl font-nighty mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70 animate-pulse">
             Get Roasted in Style
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
             Randomize your reality check from your favorite shows
           </p>
-          <Button 
-            onClick={handleRandomMode}
-            className="mt-8 group flex items-center gap-2 bg-primary/20 hover:bg-primary/30 text-primary"
-          >
-            <Shuffle className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
-            Switch Roast Mode
-          </Button>
+          <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
+            <Button 
+              onClick={handleRandomMode}
+              className="group flex items-center gap-2 bg-primary/20 hover:bg-primary/30 text-primary px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <Shuffle className="w-6 h-6 group-hover:rotate-180 transition-transform duration-300" />
+              <span className="text-lg font-medium">Switch Roast Mode</span>
+            </Button>
+          </div>
         </div>
 
         {/* Current Mode Display */}
@@ -187,7 +189,11 @@ export default function Features() {
             <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
             <div className="flex items-center gap-4 mb-6">
-              <span className="text-4xl">{currentModeData.icon}</span>
+              <img 
+                src={currentModeData.icon} 
+                alt={currentModeData.title}
+                className="w-16 h-16 object-cover rounded-lg shadow-md"
+              />
               <div>
                 <h2 className="text-3xl font-nighty">{currentModeData.title}</h2>
                 <p className="text-muted-foreground">{currentModeData.description}</p>
