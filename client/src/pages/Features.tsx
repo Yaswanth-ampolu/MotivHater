@@ -42,7 +42,7 @@ const roastModes = {
   },
   b99: {
     title: "Brooklyn 99",
-    icon: "🚔",
+    icon: "https://media.giphy.com/media/l4HnN3TbBNYZbeEdq/giphy.gif",
     description: "Cool cool cool cool cool... not your productivity though",
     roasts: {
       10: "Your productivity is lower than Hitchcock and Scully combined",
@@ -59,7 +59,7 @@ const roastModes = {
   },
   friends: {
     title: "F.R.I.E.N.D.S",
-    icon: "☕",
+    icon: "https://media.giphy.com/media/LMuU3xRkGus3SYqaqD/giphy.gif",
     description: "Could your productivity BE any lower?",
     roasts: {
       10: "Your work ethic is like Ross's marriages - brief and unsuccessful",
@@ -76,7 +76,7 @@ const roastModes = {
   },
   brainrot: {
     title: "BrainRot™ Mode",
-    icon: "🧠",
+    icon: "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
     description: "For chronically online individuals",
     roasts: {
       10: "Bro really said 'productivity arc' while watching Skibidi Toilet compilations 💀",
@@ -93,7 +93,7 @@ const roastModes = {
   },
   doomscroller: {
     title: "Doom Scroller Elite",
-    icon: "📱",
+    icon: "https://media.giphy.com/media/3o7TKEon7mFwdygLYY/giphy.gif",
     description: "Touch grass? Never heard of it",
     roasts: {
       10: "Another day of horizontal phone time?",
@@ -110,7 +110,7 @@ const roastModes = {
   },
   rickmorty: {
     title: "Rick & Morty",
-    icon: "🧪",
+    icon: "https://media.giphy.com/media/3oEjHB1EXfScQvvgnm/giphy.gif",
     description: "Wubba Lubba Procrastination",
     roasts: {
       10: "Your productivity is lower than Jerry's self-esteem",
@@ -127,7 +127,7 @@ const roastModes = {
   },
   gym: {
     title: "Gym Bro",
-    icon: "💪",
+    icon: "https://media.giphy.com/media/LQp2DrNPPUPybUwVx9/giphy.gif",
     description: "Do you even lift (your productivity)?",
     roasts: {
       10: "Bro, your excuses are getting more reps than your tasks",
