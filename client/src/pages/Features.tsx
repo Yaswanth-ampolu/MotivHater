@@ -169,10 +169,10 @@ export default function Features() {
           <h1 className="text-5xl md:text-6xl font-nighty mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70 animate-pulse">
             Get Roasted in Style
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
-            Randomize your reality check from your favorite shows
-          </p>
-          <div className="relative mt-8">
+          <div className="flex flex-col items-center gap-6 mb-12">
+            <p className="text-xl text-muted-foreground max-w-2xl text-center">
+              Randomize your reality check from your favorite shows
+            </p>
             <Button 
               onClick={handleRandomMode}
               className="group flex items-center gap-2 bg-primary/20 hover:bg-primary/30 text-primary px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
@@ -189,11 +189,15 @@ export default function Features() {
             <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
             <div className="flex items-center gap-4 mb-6">
-              <img 
-                src={currentModeData.icon} 
-                alt={currentModeData.title}
-                className="w-16 h-16 object-cover rounded-lg shadow-md"
-              />
+              <picture>
+                <img 
+                  src={currentModeData.icon} 
+                  alt={currentModeData.title}
+                  loading="eager"
+                  decoding="async"
+                  className="w-16 h-16 object-cover rounded-lg shadow-md bg-muted"
+                />
+              </picture>
               <div>
                 <h2 className="text-3xl font-nighty">{currentModeData.title}</h2>
                 <p className="text-muted-foreground">{currentModeData.description}</p>
