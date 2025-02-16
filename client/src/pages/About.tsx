@@ -83,7 +83,7 @@ export default function About() {
           <h2 className="text-3xl font-pilowlava text-center mb-8">Our Journey</h2>
           <div className="space-y-8">
             <div className="flex gap-4">
-              <div className="w-24 font-semibold">2023</div>
+              <div className="w-24 font-semibold">Jan 2025</div>
               <div>
                 <h3 className="font-semibold">Project Launch</h3>
                 <p className="text-muted-foreground">
@@ -92,11 +92,11 @@ export default function About() {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="w-24 font-semibold">2024</div>
+              <div className="w-24 font-semibold">Coming Soon</div>
               <div>
                 <h3 className="font-semibold">AI Integration</h3>
                 <p className="text-muted-foreground">
-                  Introduced our signature AI-powered roasts and motivation system.
+                  Our upcoming AI-powered roasts and motivation system.
                 </p>
               </div>
             </div>
