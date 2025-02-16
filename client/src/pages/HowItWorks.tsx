@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import {
   Tabs,
   TabsContent,
@@ -11,17 +12,17 @@ const taskModes = [
   {
     name: "Work",
     icon: "💼",
-    example: "Time to close those 27 browser tabs and actually do some work!"
+    example: "Still browsing Reddit? Your productivity is lower than your standards!"
   },
   {
     name: "Study",
     icon: "📚",
-    example: "Netflix won't help you pass that exam. Let's hit the books!"
+    example: "Your brain cells called, they're tired of being unemployed. Open those books!"
   },
   {
     name: "Fitness",
     icon: "💪",
-    example: "Your gym membership is crying from neglect. Time to move!"
+    example: "Your couch is not a gym equipment! Get up and move those muscles!"
   }
 ];
 
@@ -32,10 +33,10 @@ export default function HowItWorks() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-pilowlava mb-6">
-            How Our AI Keeps You Productive
+            How MotivHater Works
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A simple yet powerful system designed to keep you motivated and on track.
+            Because sometimes you need a digital villain to push you towards success.
           </p>
         </div>
 
@@ -45,10 +46,10 @@ export default function HowItWorks() {
             <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
               <span className="text-2xl">1</span>
             </div>
-            <h2 className="text-xl font-semibold mb-4">Set Your Tasks</h2>
+            <h2 className="text-xl font-semibold mb-4">Start Your Villain Arc</h2>
             <p className="text-muted-foreground">
-              Input your daily goals and choose your preferred task categories.
-              Our AI will help you stay accountable.
+              Set your goals and choose your nemesis mode. Our AI will make sure you
+              stay on track, whether you like it or not.
             </p>
           </Card>
 
@@ -56,10 +57,10 @@ export default function HowItWorks() {
             <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
               <span className="text-2xl">2</span>
             </div>
-            <h2 className="text-xl font-semibold mb-4">Get AI Feedback</h2>
+            <h2 className="text-xl font-semibold mb-4">Face Your Laziness</h2>
             <p className="text-muted-foreground">
-              Receive personalized motivation and friendly roasts based on your progress.
-              The AI adapts to your style and needs.
+              Receive brutal honesty and sarcastic motivation. Our AI doesn't care
+              about your excuses - only results.
             </p>
           </Card>
 
@@ -67,17 +68,16 @@ export default function HowItWorks() {
             <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
               <span className="text-2xl">3</span>
             </div>
-            <h2 className="text-xl font-semibold mb-4">Earn & Progress</h2>
+            <h2 className="text-xl font-semibold mb-4">Embrace the Hate</h2>
             <p className="text-muted-foreground">
-              Build streaks, earn badges, and climb the leaderboards as you
-              accomplish your goals.
+              Turn that sass into success. Every roast brings you closer to your goals.
             </p>
           </Card>
         </div>
 
         {/* Interactive Demo */}
         <Card className="p-8 mb-16">
-          <h2 className="text-2xl font-pilowlava mb-6">Try Different Task Modes</h2>
+          <h2 className="text-2xl font-pilowlava mb-6">Preview Your Pain</h2>
           <Tabs defaultValue="Work" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-8">
               {taskModes.map((mode) => (
@@ -90,7 +90,7 @@ export default function HowItWorks() {
             {taskModes.map((mode) => (
               <TabsContent key={mode.name} value={mode.name}>
                 <div className="bg-slate-100 p-6 rounded-lg">
-                  <p className="text-lg mb-4">AI Response for {mode.name} Mode:</p>
+                  <p className="text-lg mb-4">Your Daily Dose of Hate:</p>
                   <p className="italic text-xl">{mode.example}</p>
                 </div>
               </TabsContent>
@@ -101,9 +101,11 @@ export default function HowItWorks() {
         {/* CTA Section */}
         <div className="text-center">
           <h2 className="text-3xl font-pilowlava mb-6">
-            Ready to Transform Your Productivity?
+            Stop Being Lazy. Start Now.
           </h2>
-          <Button className="cta-button">Get Started Now</Button>
+          <Link href="/download">
+            <Button className="cta-button">Get Started Now</Button>
+          </Link>
         </div>
       </div>
     </div>

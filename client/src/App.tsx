@@ -10,6 +10,7 @@ import HowItWorks from "@/pages/HowItWorks";
 import Testimonials from "@/pages/Testimonials";
 import About from "@/pages/About";
 import Faq from "@/pages/Faq";
+import Download from "@/pages/Download";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -24,6 +25,7 @@ function Router() {
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/about" component={About} />
           <Route path="/faq" component={Faq} />
+          <Route path="/download" component={Download} />
           <Route component={NotFound} />
         </Switch>
       </main>

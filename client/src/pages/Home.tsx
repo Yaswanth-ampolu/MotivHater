@@ -15,10 +15,10 @@ export default function Home() {
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-nighty leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
               Stay Productive.<br />
               Get Roasted.<br />
-              Win the Game.
+              Embrace the Hate.
             </h1>
             <p className="text-xl text-muted-foreground">
-              AI-driven motivation that pushes you to succeed, with a little extra burn to keep you on track.
+              The AI productivity app that doesn't care about your feelings - only your success.
             </p>
             <Link href="/download">
               <Button className="cta-button text-lg">Start Your Villain Arc</Button>
@@ -40,8 +40,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">AI-Powered Motivation</h3>
-              <p className="text-muted-foreground">Get personalized roasts and motivation to keep you on track.</p>
+              <h3 className="text-xl font-semibold mb-2">AI-Powered Hate</h3>
+              <p className="text-muted-foreground">Get personalized roasts that actually make you work harder.</p>
             </div>
             <div className="feature-card">
               <div className="h-12 w-12 mb-4 rounded-full bg-primary/10 flex items-center justify-center">
@@ -49,8 +49,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Gamification</h3>
-              <p className="text-muted-foreground">Earn streaks, badges, and climb the leaderboards.</p>
+              <h3 className="text-xl font-semibold mb-2">Villain Points</h3>
+              <p className="text-muted-foreground">Turn your productivity into power. Earn points through pure spite.</p>
             </div>
             <div className="feature-card">
               <div className="h-12 w-12 mb-4 rounded-full bg-primary/10 flex items-center justify-center">
@@ -58,8 +58,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Smart Tracking</h3>
-              <p className="text-muted-foreground">Monitor your progress with intelligent analytics.</p>
+              <h3 className="text-xl font-semibold mb-2">Progress Tracking</h3>
+              <p className="text-muted-foreground">Watch your transformation from lazy to legendary.</p>
             </div>
           </div>
         </div>
@@ -115,6 +115,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Replace the final CTA with */}
+      <div className="text-center mt-8">
+        <Link href="/download">
+          <Button className="cta-button">Download MotivHater</Button>
+        </Link>
+      </div>
     </div>
   );
 }
