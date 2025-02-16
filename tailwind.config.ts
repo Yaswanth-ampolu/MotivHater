@@ -9,6 +9,7 @@ export default {
         nighty: ['var(--font-nighty)'],
         outward: ['var(--font-outward)'],
         sans: ['Inter var', 'sans-serif'],
+        fenix: ['Fenix', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

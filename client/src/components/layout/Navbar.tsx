@@ -11,6 +11,12 @@ const navigation = [
   { name: "FAQ", href: "/faq" },
 ];
 
+// Simple Logo Component (Placeholder)
+const Logo = () => (
+  <span className="font-Fenix font-bold text-2xl text-primary">MotivHater</span>
+);
+
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [location] = useLocation();
@@ -19,8 +25,8 @@ export default function Navbar() {
     <nav className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 border-b">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="font-nighty text-2xl text-primary">
-            MotivHater
+          <Link href="/" className="flex items-center space-x-2">
+            <Logo />
           </Link>
 
           {/* Desktop Navigation */}
