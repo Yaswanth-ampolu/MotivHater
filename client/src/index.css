@@ -13,6 +13,25 @@
     --font-outward: 'Outward', system-ui;
   }
 
+  @keyframes gradientRotate {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  body {
+    @apply font-sans antialiased text-foreground;
+    background: linear-gradient(45deg, #000000, #1a1a1a, #2d2d2d, #1a1a1a);
+    background-size: 400% 400%;
+    animation: gradientRotate 15s ease infinite;
+  }
+
   * {
     @apply border-border;
   }
