@@ -7,50 +7,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 @layer base {
-  .animate-gradient {
-    background-size: 200% auto;
-    animation: gradient 4s ease infinite;
-  }
-
-  .text-shadow-sm {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-
-  p {
-    @apply text-slate-100 leading-relaxed;
-  }
   :root {
     --font-nighty: 'Nighty', system-ui;
     --font-outward: 'Outward', system-ui;
-  }
-
-  @keyframes gradientRotate {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  body {
-    @apply font-sans antialiased;
-    background: linear-gradient(45deg, #000000, #1a1a1a, #2d2d2d, #1a1a1a);
-    background-size: 400% 400%;
-    animation: gradientRotate 15s ease infinite;
-    color: #ffffff;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    letter-spacing: 0.3px;
   }
 
   * {
