@@ -52,3 +52,20 @@
     @apply p-6 rounded-xl bg-card shadow-lg hover:shadow-xl transition-shadow;
   }
 }
+
+/* Custom Scrollbar */
+.h-[400px]::-webkit-scrollbar {
+  width: 8px;
+}
+
+.h-[400px]::-webkit-scrollbar-track {
+  @apply bg-slate-100 rounded-full;
+}
+
+.h-[400px]::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 rounded-full transition-colors hover:bg-primary/50;
+}
+
+.h-[400px]::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/50;
+}
