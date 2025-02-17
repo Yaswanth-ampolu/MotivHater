@@ -5,7 +5,7 @@
 ## 🌟 About  
 MotivHater is a unique productivity app that blends AI-generated humor, brutal roasts, and gamified motivation to keep users on track with their goals. Whether you're a student, a fitness enthusiast, or just trying to get through the day, MotivHater makes staying productive fun (and slightly painful)!  
 
-🔗 **kanding page Site:** [MotivHater](https://motivhater.netlify.app/)  
+🔗 **Landing page Site:** [MotivHater](https://motivhater.netlify.app/)  
 📂 **GitHub Repo:** [MotivHater on GitHub](https://github.com/Yaswanth-ampolu/MotivHater)  
 
 ---
