@@ -34,7 +34,7 @@ npm install
 ```bash
 npm run dev
 ```  
-3️⃣ Open `index.html` in your browser or use a live server extension.  
+3️⃣ Open `localhost:5000` in your browser   
 
 ---
 
